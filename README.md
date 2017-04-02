@@ -9,6 +9,7 @@ vendor features include:
 * Manage Products
 * Check Orders
 * Simple Dashboard
+* Buy products from multiple vendors at same order
 
 ## Installation
 * Modman
@@ -42,3 +43,8 @@ If your contribution doesn't fit with an existing issue, go ahead and [create an
 ## Customizations and new features
 If you need some customizations or new features and do not know how to do it, please contact me :) 
 
+### What's Next
+* Implement shipping split for vendors
+* Improve the dashboard
+* Vendor's landing page
+* and much more :)
