@@ -17,11 +17,23 @@ modgit add marketplace git@github.com:thiagolima-bm/Magento_Marketplace.git
 ```
 * Downloading
 
+### Documentation
+
+This extension works like plug and play. The only that you need to do is create a store account (the vendor who will sell items on the marketplace). 
+The flow is pretty much similar than the regular magento flow for creating a product and check orders.
+On the vender menu, there are three items
+
+* Dashboard - Where he will see a few reports
+* Products - Where he can manage its own products
+* Orders - Where he can check the its own orders
+
+### Documentation
+
+The code is self explanatory but if you have any questions, do not hesitate in contacting me.
+
 
 ### Contributing
 
 Want to contribute? That's great! [Here's you can get started](https://guides.github.com/activities/contributing-to-open-source/#contributing).
 
-Check out our Issues page, and if you find something you want to work on, let us know in the comments. If you're interested in a particular [project](https://github.com/reactioncommerce/reaction/projects) and you aren’t sure where to begin, feel free to ask. Start small!
-
-If your contribution doesn't fit with an existing issue, go ahead and [create an issue](https://github.com/thiagolima-bm/Magento_Marketplace/issues/new) before submitting a [Pull Request](https://help.github.com/articles/about-pull-requests/). This will allow the Reaction team to give feedback if necessary. 
+If your contribution doesn't fit with an existing issue, go ahead and [create an issue](https://github.com/thiagolima-bm/Magento_Marketplace/issues/new) before submitting a [Pull Request](https://help.github.com/articles/about-pull-requests/).
