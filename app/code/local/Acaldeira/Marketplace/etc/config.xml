@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Acaldeira_Marketplace
+ *
+ * @category    Acaldeira
+ * @package     Acaldeira_Marketplace
+ * @copyright   Copyright (c) 2017 XXX. (http://www.acaldeira.com.br)
+ */
+ -->
+<config>
+    <modules>
+        <Acaldeira_Marketplace>
+            <version>0.1.1</version>
+        </Acaldeira_Marketplace>
+    </modules>
+    <global>
+        <models>
+            <acmarketplace>
+                <class>Acaldeira_Marketplace_Model</class>
+                <resourceModel>acmarketplace_resource</resourceModel>
+            </acmarketplace>
+            <acmarketplace_resource>
+                <class>Acaldeira_Marketplace_Model_Resource</class>
+                <entities>
+                    <store>
+                        <table>acmarketplace_store</table>
+                    </store>
+                </entities>
+            </acmarketplace_resource>
+        </models>
+        <resources>
+            <acmarketplace_setup>
+                <setup>
+                    <module>Acaldeira_Marketplace</module>
+                </setup>
+            </acmarketplace_setup>
+        </resources>
+        <blocks>
+            <acmarketplace>
+                <class>Acaldeira_Marketplace_Block</class>
+            </acmarketplace>
+        </blocks>
+        <helpers>
+            <acmarketplace>
+                <class>Acaldeira_Marketplace_Helper</class>
+            </acmarketplace>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <acmarketplace before="Mage_Adminhtml">Acaldeira_Marketplace_Adminhtml</acmarketplace>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <acmarketplace>
+                    <file>acaldeira/marketplace.xml</file>
+                </acmarketplace>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

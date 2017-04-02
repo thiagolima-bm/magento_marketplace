@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_marketplace_product_index>
+        <reference name="content">
+            <block type="acmarketplace/adminhtml_product" name="marketplace.product"/>
+        </reference>
+    </adminhtml_marketplace_product_index>
+
+    <adminhtml_marketplace_product_editproduct>
+        <update handle="editor" />
+        <reference name="content">
+            <block type="acmarketplace/adminhtml_product_edit" name="product_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="acmarketplace/adminhtml_product_edit_tabs" name="product_tabs"></block>
+        </reference>
+        <reference name="js">
+            <block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml"
+                   name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml" />
+        </reference>
+    </adminhtml_marketplace_product_editproduct>
+
+    <adminhtml_marketplace_product_categories>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="acmarketplace/adminhtml_product_edit_tab_categories" name="catalog.product.edit.tab.categories"/>
+        </block>
+    </adminhtml_marketplace_product_categories>
+</layout>

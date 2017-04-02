@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_marketplacedashboard_dashboard_index>
+        <reference name="content">
+            <block type="acmarketplacedashboard/adminhtml_dashboard" name="marketplacedashboard.container"
+                   template="acaldeira/marketplace/dashboard/dashboard.phtml"></block>
+        </reference>
+    </adminhtml_marketplacedashboard_dashboard_index>
+</layout>

@@ -1,0 +1,46 @@
+<?php
+/**
+ * Acaldeira_MarketplaceOrder
+ *
+ * @category    Acaldeira
+ * @package     Acaldeira_MarketplaceOrder
+ * @copyright   Copyright (c) 2017 Acaldeira. (http://www.acaldeira.com.br)
+ */
+
+/* @var $this Acaldeira_MarketplaceDashboard_Block_Adminhtml_Dashboard */
+
+$marketplaceStore = $this->getMarketplaceStore();
+?>
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td><h3 class="head-dashboard"><?php echo $this->__('Dashboard') ?></h3></td>
+        </tr>
+    </table>
+</div>
+<div class="dashboard-container">
+    <table cellspacing="25" width="100%">
+        <tr>
+            <td>
+                <div class="entry-edit">
+                    <?php echo $this->__('Store') ?> : <?php echo $marketplaceStore->getName(); ?>
+                </div>
+                <div class="entry-edit">
+                    <?php echo $this->__('Email') ?> : <?php echo $marketplaceStore->getEmail(); ?>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table cellspacing="25" width="100%">
+        <tr>
+            <td>
+                <div class="entry-edit">
+                    <?php echo $this->__('Orders #') ?> : <?php echo $this->getNumOfOrders(); ?>
+                </div>
+                <div class="entry-edit">
+                    <?php echo $this->__('Amount') ?> : <?php echo Mage::helper('core')->currency($this->getSumSubTotalOfOrders(), true, false); ?>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Acaldeira_MarketplaceDashboard
+ *
+ * @category    Acaldeira
+ * @package     Acaldeira_MarketplaceDashboard
+ * @copyright   Copyright (c) 2017 Acaldeira. (http://www.acaldeira.com.br)
+ */
+-->
+<config>
+    <modules>
+        <Acaldeira_MarketplaceDashboard>
+            <version>0.1.0</version>
+        </Acaldeira_MarketplaceDashboard>
+    </modules>
+    <global>
+        <blocks>
+            <acmarketplacedashboard>
+                <class>Acaldeira_MarketplaceDashboard_Block</class>
+            </acmarketplacedashboard>
+        </blocks>
+        <helpers>
+            <acmarketplacedashboard>
+                <class>Acaldeira_MarketplaceDashboard_Helper</class>
+            </acmarketplacedashboard>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <acmarketplacedashboard before="Mage_Adminhtml">Acaldeira_MarketplaceDashboard_Adminhtml</acmarketplacedashboard>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <acmarketplacedashboard>
+                    <file>acaldeira/marketplacedashboard.xml</file>
+                </acmarketplacedashboard>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

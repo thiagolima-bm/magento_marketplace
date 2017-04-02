@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Acaldeira_Marketplace
+ *
+ * @category    Acaldeira
+ * @package     Acaldeira_Marketplace
+ * @copyright   Copyright (c) 2017 XXX. (http://www.acaldeira.com.br)
+ */
+ -->
+<config>
+	<menu>
+		<acmarketplace translate="title"  module="acmarketplace">
+			<title>Marketplace</title>
+			<sort_order>71</sort_order>
+			<children>
+				<marketplace_store>
+					<title>Manage Stores</title>
+					<sort_order>0</sort_order>
+					<action>adminhtml/marketplace_store</action>
+				</marketplace_store>
+				<dashboard module="acmarketplace">
+					<title>Dashboard</title>
+					<sort_order>1</sort_order>
+					<action>adminhtml/marketplacedashboard_dashboard</action>
+				</dashboard>
+				<catalog module="acmarketplace">
+					<title>Products</title>
+					<sort_order>1</sort_order>
+					<action>adminhtml/marketplace_product/index</action>
+				</catalog>
+				<orders module="acmarketplace">
+					<title>Manage Orders</title>
+					<sort_order>3</sort_order>
+					<action>adminhtml/marketplaceorder_order</action>
+				</orders>
+			</children>
+		</acmarketplace>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<acmarketplace translate="title" module="acmarketplace">
+						<title>Ac Markeplace</title>
+						<sort_order>71</sort_order>
+						<children>
+							<marketplace_companies module="acmarketplace">
+								<title>Manage Companies</title>
+								<sort_order>0</sort_order>
+							</marketplace_companies>
+							<dashboard translate="title">
+								<title>Dashboard</title>
+								<sort_order>1</sort_order>
+							</dashboard>
+							<catalog translate="title">
+								<title>Products</title>
+								<sort_order>2</sort_order>
+							</catalog>
+							<orders translate="title">
+								<title>Manage Orders</title>
+								<sort_order>3</sort_order>
+							</orders>
+						</children>
+					</acmarketplace>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<layout>
+		<updates>
+			<acmarketplace>
+				<file>acaldeira/acmarketplace.xml</file>
+			</acmarketplace>
+		</updates>
+	</layout>
+</config>
