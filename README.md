@@ -45,6 +45,7 @@ If you need some customizations or new features and do not know how to do it, pl
 
 ### What's Next
 * Implement shipping split for vendors
+* Implement payment split for vendors
 * Improve the dashboard
 * Vendor's landing page
 * and much more :)
